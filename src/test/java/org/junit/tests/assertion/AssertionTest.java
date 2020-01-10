@@ -22,7 +22,7 @@ import org.junit.ComparisonFailure;
 import org.junit.Test;
 import org.junit.function.ThrowingRunnable;
 import org.junit.internal.ArrayComparisonFailure;
-
+import java.util.Comparator;
 /**
  * Tests for {@link org.junit.Assert}
  */
@@ -1001,5 +1001,12 @@ public class AssertionTest {
                 throw t;
             }
         };
+    }
+    public void assertGreaterThanInt()
+    {
+        int i1=0;
+        int i2=0;
+        Compare comparator=new Compare();
+        assertEquals(Assert.assertGreaterThanInt(i1, i2, comparator), -1);
     }
 }
