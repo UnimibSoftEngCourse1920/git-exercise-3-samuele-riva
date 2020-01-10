@@ -1032,14 +1032,8 @@ public class Assert {
         return message != null && message.length() != 0 ? message + ": " : "";
     }
     
-<<<<<<< HEAD
-    public static <T> int assertGreaterThanInt(int i1,int i2, Compare comparator)
-    {
-        return comparator.compareInt(i1, i2);
-=======
     public static <T> int assertGreaterThanInt(T i1, T i2, java.util.Comparator<T> comparator)
     {
         return comparator.compare(i1, i2);
->>>>>>> refs/heads/greater
     }
 }

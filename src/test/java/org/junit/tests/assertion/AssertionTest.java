@@ -1011,15 +1011,6 @@ public class AssertionTest {
             }
         };
     }
-<<<<<<< HEAD
-    
-=======
-    public void assertGreaterThanInt()
-    {
-        int i1=0;
-        int i2=0;
-        Compare comparator=new Compare();
-        assertEquals(Assert.assertGreaterThanInt(i1, i2, comparator), -1);
-    }
->>>>>>> refs/heads/greater
+
+   
 }
