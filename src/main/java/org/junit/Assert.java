@@ -1031,4 +1031,9 @@ public class Assert {
     private static String buildPrefix(String message) {
         return message != null && message.length() != 0 ? message + ": " : "";
     }
+    
+    public static <T> int assertGreaterThanInt(T i1, T i2, java.util.Comparator<T> comparator)
+    {
+        return comparator.compare(i1, i2);
+    }
 }
